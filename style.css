@@ -1,0 +1,428 @@
+/*تعديلات الموقع الرئيسي*/
+
+/*تنسيقات عامة الصفحة*/
+*
+{
+margin:0;
+padding:0;
+font-family:sans-serif;
+}
+
+body
+{
+background:#f1f2f6;
+}
+/*تنسيقات عامة الصفحة$*/
+
+/*تنسيقات عنوان الصفحة وشريط المعلومات*/
+
+/*تنسيقات الصورة*/
+.moh img
+{
+width:100%;
+height:100%;
+}
+/*تنسيقات الصورة$*/
+
+/*تنسيقات شريط الاقسام الرئيسية*/
+.moh1
+{
+width:100%;
+display:flex;
+direction:rtl;
+min-height:10vh;
+margin-top:-13px;
+background:#303952;
+padding:0 35px 0 0;
+align-items:center;
+box-sizing:border-box;
+}
+
+.nav
+{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#fff;
+padding:20px;
+transition:0.5s;
+border-radius:4px;
+overflow:hidden;
+box-shadow:0 8px 15px rgba(0,0,0,.2);
+}
+
+.menu
+{
+margin:0;
+padding:0;
+width:10px;
+height:10px;
+overflow:flex;
+transition:.5s;
+}
+
+.nav input:checked ~ .menu
+{
+width:610px;
+}
+
+.menu li
+{
+list-style:none;
+margin:-15px 30px 0 0;
+display:inline-block;
+}
+
+.menu li a
+{
+text-decoration:none;
+color:#666;
+text-transform:uppercase;
+font-weight:bold;
+font-size:30px;
+transition:.5s;
+display:inline-block;
+}
+
+.menu li a:hover 
+{
+color:#080;
+}
+
+.nav input
+{
+width:60px;
+height:60px;
+cursor:pointer;
+opacity:0;
+}
+
+.nav span
+{
+position:absolute;
+right:39px;
+width:32px;
+height:4px;
+background:#666;
+pointer-events:none;
+transition:0.5s;
+}
+
+.nav input:checked ~ span
+{
+background:#f974a1;
+}
+
+.nav span:nth-child(2) 
+{
+transform:translateY(-8px)
+}
+
+.nav span:nth-child(3) 
+{
+transform:translateY(8px)
+}
+
+.nav input:checked ~ span:nth-child(2) 
+{
+transform:translateY(0) rotate(45deg);
+}
+
+.nav input:checked ~ span:nth-child(3) 
+{
+transform:translateY(0) rotate(-45deg);
+}
+/*تنسيقات شريط الاقسام الرئيسية$*/
+
+/*تنسيقات الصورة تحت الشريط */
+.moh2 img
+{
+width:100%;
+}
+
+.img
+{
+width:300px;
+margin:200px auto;
+}
+.img img
+{
+margin-bottom:30px;
+}
+.moh3 h5
+{
+font-size:50px;
+text-align:center;
+}
+/*تنسيقات الصورة تحت الشريط$*/
+
+/*تنسيقات عنوان الصفحة وشريط المعلومات$*/
+
+
+/*تنسيقات محتوى الصفحة*/
+
+/*تنسيقات كتب المقدمة*/
+.box
+{
+position:relative;
+width:700px;
+height:700px;
+background:#000;
+margin:20px auto;
+border:2px solid #000;
+border-radius:50px 0 0 0;
+}
+
+.content
+{
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:grid;
+align-items:center;
+color:#fff;
+padding:20px;
+text-align:center;
+}
+
+.box .content h2
+{
+margin:0;
+margin-bottom:50px;
+font-size:45px;
+}
+
+.box .content p
+{
+font-size:25px;
+}
+
+.box .content span
+{
+direction:rtl;
+display:block;
+font-size:40px;
+font-weight:bold;
+line-height:70px;
+}
+
+.content a
+{
+font-size:30px;
+display:block;
+margin-top:40px;
+padding:10px 10px;
+border:1px solid #fff;
+text-decoration:none;
+color:#fff;
+transition:.5s;
+}
+
+.content a:hover
+{
+color:#000;
+background:#fff;
+}
+
+.box img
+{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#0f0;
+object-fit:cover;
+clip-path:polygon(0 0,100% 0,100% 100%,0% 100%);
+transition:1s;
+border-radius:50px 0 0 0;
+}
+.box:hover img
+{
+clip-path:polygon(0 0,100% 0,0% 0%,0% 100%)
+}
+
+/*تنسيقات كتب المقدمة$*/
+
+/*عنوان القسم*/
+.hei
+{
+margin-top:150px;
+border-bottom:6px solid #333;
+font-size:30px;
+color:#fff;
+}
+.hei h2
+{
+width:200px;
+height:80px;
+background:#333;
+padding:20px 40px 0 0;
+border-radius:10px 0 0 0;
+}
+/*عنوان القسم$*/
+
+/*تنسيقات الكتب*/
+.wad
+{
+background:url("app.jpg");
+background-size:100% 100%;
+color:#fff;
+width:800px;
+margin:40px auto;
+border-radius:20px;
+border:5px solid #8395a7;
+position:relative;
+padding:20px 0 20px 0;
+opacity:0.9;
+transition:all 0.5s linear;
+}
+.wad:hover 
+{
+opacity:1;
+border:5px solid #eb3b5a;
+}
+.wad h3
+{
+margin:10px;
+text-align:center;
+font-size:40px;
+}
+.wad img
+{
+width:100%;
+}
+.wad p
+{
+text-align:center;
+font-size:35px;
+margin:20px 0;
+color:#20bf6b;
+}
+span
+{
+display:block;
+font-weight:bold;
+color:#fff;
+}
+/*تنسيقات الكتب$*/
+
+/*تنسيقات زر التحميل*/
+.wad .button
+{
+position:absolute;
+text-align:center;
+right:31%;
+top:98%;
+}
+.wad .button button
+{
+width:300px;
+font-size:40px;
+background:#0f0;
+padding:10px;
+padding:0 60px;
+border-radius:10px;
+border:3px solid #8395a7;
+}
+.wad .button .dow
+{
+width:50px;
+height:40px;
+position:absolute;
+top:15%;
+right:70%
+}
+.wad .button button:hover
+{
+border:5px solid #eb3b5a;
+}
+/*تنسيقات زر التحميل$*/
+
+/*تنسيقات زر المزيد*/
+.href a
+{
+color:#00f;
+margin:10px;
+padding-right:65px;
+}
+/*تنسيقات زر المزيد$*/
+
+/*تنسيقات محتوى الصفحة$*/
+
+
+
+/*تنسيقات المحتوى كتب منوعة*/
+
+/*تنسيقات div الرئيسي*/
+.lol
+{
+margin-top:50px;
+box-sizing:border-box;
+position:relative;
+}
+
+/*تنسيقات الخط*/
+.lol p
+{
+color:#fff;
+font-size:25px;
+}
+
+/*تنسيقات span*/
+.lol span
+{
+color:#000;
+font-size:30px;
+font-weight:bold;
+margin-top:10px;
+}
+
+/*تنسيقات الكتب */
+.lol1,.lol2,.lol3,.lol4
+{
+padding:20px;
+height:300px;
+background:#778ca3;
+border:2px solid #4b6584;
+}
+
+/*تنسيقات الصور*/
+.lol1 img
+{
+float:left;
+}
+.lol2 img
+{
+float:left;
+}
+.lol3 img
+{
+float:left;
+}
+.lol4 img
+{
+float:left;
+}
+
+/*تنسيقات زر التحميل */
+.lol .button button
+{
+border:none;
+background:#2ecc71;
+border-radius:100px;
+margin:10px;
+margin-top:0;
+width:250px;
+height:40px;
+font-size:30px;
+}
+.button button:hover 
+{
+border:3px solid red;
+}
+
+/*تنسيقات كتب منوعة$*/
